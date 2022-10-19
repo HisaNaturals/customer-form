@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+:root{
+  --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+} 
+body{
+  font-family: 'Poppins', sans-serif;
+  
+ 
+}
+.container{
+  width:1000px;
+  margin: 50px auto;
+}
+.form-group{
+  display:grid;
+/*   grid-template-columns:repeat(3, auto-fit minmax(200px,1fr)); */
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+.add, .land{
+  grid-column: 1 / -1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select, textarea
+{
+  padding:10px;
+  border:1px solid #999;
+  background-color:#e9e9e9;
+  color:#333;
+  font-family: inherit;
+  font-size:16px;
+  
+  display:inline-block;
+}
+input[type="text"]:focus{
+  outline:none;
+}
+button{
+  border:1px solid #999;
+  
+  color:#fff;
+  padding: 15px 20px;
+  cursor:pointer;
+}
+.add-btn{
+  background-color: green;
+}
+.can-btn{
+  background-color: orangered;
+}
+button:focus{
+  outline:none;
+}
+.line{
+  border: 1px solid #e9e9e9;
+  margin: 20px 0;
+}
